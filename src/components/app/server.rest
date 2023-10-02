@@ -1,0 +1,8 @@
+@hostname = localhost
+@port = 3000
+@host = {{hostname}}:{{port}}
+@baseUrl = http://{{hostname}}:{{port}}
+
+GET {{baseUrl}}/msgs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWFyaWEiLCJpYXQiOjE2OTYyNDk3NjQsImV4cCI6MTY5NjI0OTc3OX0.Bn-aujFUyRsNw1sv6PnNMg6A_To5_fVI11REFz0cQ58
+
