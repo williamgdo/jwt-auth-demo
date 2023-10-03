@@ -1,0 +1,211 @@
+{
+    "info": {
+        "_postman_id": "3533e1d4-f5d8-4033-8f03-d51f4e4de273",
+        "name": "jwt-auth-demo",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "/logout",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "http://localhost:4000/logout",
+                    "path": [
+                        "logout"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWFyaWEiLCJpYXQiOjE2OTYzMDcyOTd9.ygZWWxC7aYZAGrDTG0CtAA2B8CnHHyMC34Uq8brV1hs\"\n}"
+                }
+            }
+        },
+        {
+            "name": "/login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:4000/login",
+                    "path": [
+                        "login"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Cleber\",\n  \"password\": \"123456\"\n}"
+                }
+            }
+        },
+        {
+            "name": "/refresh-token",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:4000/refresh-token",
+                    "path": [
+                        "refresh-token"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQ2xlYmVyIiwicGFzc3dvcmQiOiIkMmIkMTAkM0FZdFVtTFBSRHljSHlLNGNEVGllT1d1dWhKdkdhLno2M09rRDRnU2RxNWovUEt6SlZ1VmkiLCJpYXQiOjE2OTYzMTA4ODh9.FEpMH9IhklvCJkH6WRd_Tvk565Vyx-ojWlPAb79UMQY\"\n}"
+                }
+            }
+        },
+        {
+            "name": "/refresh-tokens",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:4000/refresh-tokens",
+                    "path": [
+                        "refresh-tokens"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                }
+            }
+        },
+        {
+            "name": "/msgs",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:3000/msgs",
+                    "path": [
+                        "msgs"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQ2xlYmVyIiwiaWF0IjoxNjk2MzEwOTIxLCJleHAiOjE2OTYzMTA5MzZ9.iQjT1MRidzL5BtDUgrYAPDoSRGeGEvVxXwgxmiWZM6k",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "/users",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:4000/users",
+                    "path": [
+                        "users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"name\": \"Cleber\",\n  \"password\": \"123456\"\n}"
+                }
+            }
+        },
+        {
+            "name": "/users",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:4000/users",
+                    "path": [
+                        "users"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "4000"
+                }
+            }
+        },
+        {
+            "name": "/msgs",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "http://localhost:3000/msgs",
+                    "path": [
+                        "msgs"
+                    ],
+                    "protocol": "http",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "3000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"message\": \"Hello world!\"\n}"
+                },
+                "auth": {
+                    "type": "bearer",
+                    "bearer": [
+                        {
+                            "key": "token",
+                            "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQ2xlYmVyIiwicGFzc3dvcmQiOiIkMmIkMTAkM0FZdFVtTFBSRHljSHlLNGNEVGllT1d1dWhKdkdhLno2M09rRDRnU2RxNWovUEt6SlZ1VmkiLCJpYXQiOjE2OTYzMTA4ODgsImV4cCI6MTY5NjMxMDkwM30.flmWISK5D3MK8j-eb1QqoUJG89NAPq9i8em4R-nbyvw",
+                            "type": "string"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

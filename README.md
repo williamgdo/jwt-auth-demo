@@ -1,6 +1,9 @@
 # JWT Auth
 
-This app includes .rest files for the extension [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client), published by Huachao Mao, for easier querying in both servers (the app and the authentication server).
+[![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/williamgdo/jwt-auth-demo/blob/main/README.md)
+[![pt-br](https://img.shields.io/badge/lang-pt--br-green.svg)](https://github.com/williamgdo/jwt-auth-demo/blob/main/README.pt-br.md)
+
+This app includes .rest files for the extension [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client), published by Huachao Mao, for easier querying in both servers (the app and the authentication server). There is also a json file called api-postman.json that can be imported into Postman for testing purposes.
 
 ## How to generate a simple Secret Key for the .env?
 
