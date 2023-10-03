@@ -11,6 +11,17 @@ app.get("/msgs", authenticateAccessToken, (req, res) => {
   res.json(messagesDB.filter((msg) => msg.username === req.user.name));
 });
 
+app.post("/msgs", authenticateAccessToken, (req, res) => {
+  const newMessage = {
+    username: req.user.name,
+    message: req.body.message,
+  };
+
+  messagesDB.push(newMessage);
+
+  res.sendStatus(201);
+});
+
 // standalone server:
 // console.log(`Server listening on port ${PORT}...`);
 // app.listen(PORT);
